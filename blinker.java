@@ -1,4 +1,4 @@
-package helloworld;
+package blinker;
  
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -8,21 +8,21 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
  
-public class HelloWorld extends Application {
+public class blinker extends Application {
     public static void main(String[] args) {
         launch(args);
     }
     
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Blinker v0.0.0");
         Button btn = new Button();
-        btn.setText("Say 'Hello World'");
+        btn.setText("Play'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
  
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                System.out.println("Error: Not implemented!");
             }
         });
         
