@@ -16,18 +16,27 @@ public class blinker extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Blinker v0.0.0");
-        Button btn = new Button();
-        btn.setText("Play'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        Button playBtn = new Button();
+        playBtn.setText("Play");
+        playBtn.setOnAction(new EventHandler<ActionEvent>() {
  
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Error: Not implemented!");
             }
         });
-        
+        Button helpBtn = new Button();
+        helpBtn.setText("Controls");
+        helpBtn.setOnAction(new EventHandler<ActionEvent>() {
+ 
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Error: Not implemented!");
+            }
+        });
         StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        root.getChildren().add(playBtn);
+        root.getChildren().add(helpBtn);
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.show();
     }
